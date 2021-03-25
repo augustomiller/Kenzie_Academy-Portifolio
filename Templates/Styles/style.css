@@ -21,7 +21,10 @@ ESTRUTURA BASE
 font-family: 'Open Sans', sans-serif;
 
 */
-
+@font-face{
+    font-family: "Jet-Brain-Light";
+    src: url(../../Assets/Fonts/Jetbrains/JetBrainsMono-Light.ttf);
+}
 /*
 * Regra de reset dos elementos utilizados na estrutura HTML5
 */
@@ -32,36 +35,136 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
     list-style: none;
     text-decoration: none;
 }
-
-.container{}
-.linha{}
-.coluna{}
-.hidden{}
+:root{
+       /* VSC Color's */
+       --color-vsc-yellow: #e7df80;
+       --colol-vsc-purple: #191621;
+       --color-vsc-dark-purple: #13111b;
+       --color-vsc-greem: #25aa7f;
+       --color-vsc-pink: #f378a6;
+       --color-vsc-blue: #3aa4f2;
+       --color-vsc-orange: #e74d2c;
+       --color-shell-red:#ff5f5c;
+       --color-shell-yellow:#ffbf41;
+       --color-shell-greem:#01cb50;
+       --color-title-shell: #4d4879;
+       --color-uper-dark-content: #201e30;
+       --color-light: #e0dddd;
+       --color-light-header: #e7e4e4;
+       --color-h1: #4b4949;
+       --color-h1-2: #4B94F2;
+       --color-a-tungstenio: #0D0D0D;
+       --color-background-header: #4B94F2;
+       --color-background-2-header: #1B4C8C;
+       --color-footer: #1B4C8C;
+       --color-litht-section: #e7e4e4;
+       
+}
+.container{
+    width: 100%;
+    max-width: 1125px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.linha{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.coluna{
+    flex-basis: 49%;
+}
+.hidden{
+    display: none;
+}
 
 
 /*
 * /----------------------Body----------------------/
 */
-body{}
+body{
+    font-family: 'Jet-Brain-Light','Open Sans', sans-serif;
+}
 
 
 /*
 * Header
 */
-header{}
-header .container{}
-header .linha{}
+header{
+    background-color: var(--color-background-header);
+    padding-top: 30px;
+}
+header .container{
+    background-color: var(--color-light-header);
+}
+header .linha{
+    align-items: center;
+}
 header .coluna{}
-header .coluna-esquerda{}
-header .coluna-direita{}
+header .coluna-esquerda{
+    flex-basis: 30%;
+}
+header .coluna-direita{
+    flex-basis: 70%;
+}
 header .coluna figure{}
-header .coluna img{}
-header .coluna h1{}
-header .coluna p{}
-header .coluna ul{}
-header .coluna ul li{}
-header .coluna ul li a{}
+header .coluna img{
+    max-width: 250px;
+    border-radius: 100%;
+}
+header .coluna h1{
+    font-size: 1.5rem;
+}
+header .coluna p{
+    font-size: 1rem;
+    color: var(--color-h1);
+}
+header .coluna ul{
+    margin: 16px 0 0;
+}
+header .coluna ul li{
+    margin: 0 0 12px;
+}
+header .coluna ul li a{
+    font-size: 1rem;
+    color: var(--color-a-tungstenio);
+}
 
+/*
+* /----------------------Footer----------------------/
+*/
+footer{
+    background-color: var(--color-footer);
+}
+footer .container{}
+footer nav{}
+footer nav ul{}
+footer nav ul li{}
+footer nav ul li a{
+    color: var(--color-light);
+}
+footer nav .info-contato{}
+footer nav .info-contato li{
+    margin: 0 0 15px;
+}
+footer nav .info-contato li a{}
+footer nav .redes-sociais{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(255 255 255 / 20%);
+    margin: 20px 0 50px;
+    padding: 50px 0 0;
+}
+footer nav .redes-sociais li{
+    margin: 0 14px;
+    text-align: center;
+}
+footer nav .redes-sociais li a{}
+footer nav .redes-sociais li a img{
+    width: 40px;
+}
+footer nav .redes-sociais li a img p{}
 
 /*
 * /----------------------Main----------------------/
@@ -72,32 +175,36 @@ main .linha{}
 main .coluna{}
 main .coluna-esquerda{}
 main .coluna-direita{}
-main .coluna section{}
-main .coluna section h2{}
-main .coluna section p{}
+main .coluna section{
+    border: 1px solid #d4e9ff;
+    margin: 0 0 20px;
+    padding: 20px;
+    min-height: 187px;
+    background-color: var(--color-litht-section);
+}
+main .coluna section h2{
+    font-size: 1.3rem;
+    margin: 0 0 15px;
+}
+main .coluna section p{
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background-color: var(--color-litht-section);
+}
 main .coluna section ul{}
-main .coluna section ul li{}
-main .coluna section ul li h3{}
-main .coluna section ul li strong{}
+main .coluna section ul li{
+    margin: 0 0 12px;
+}
+main .coluna section ul li h3{
+    font-size: 1.1rem;
+}
+main .coluna section ul li strong{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 5px 0 10px;
+    display: inline-block;
+}
 main .coluna section ul li p{}
-
-/*
-* /----------------------Footer----------------------/
-*/
-footer{}
-footer .container{}
-footer nav{}
-footer nav ul{}
-footer nav ul li{}
-footer nav ul li a{}
-footer nav .info-contato{}
-footer nav .info-contato li{}
-footer nav .info-contato li a{}
-footer nav .redes-sociais{}
-footer nav .redes-sociais li{}
-footer nav .redes-sociais li a{}
-footer nav .redes-sociais li a img{}
-footer nav .redes-sociais li a img p{}
 
 /*
 * /----------------------Extras----------------------/
