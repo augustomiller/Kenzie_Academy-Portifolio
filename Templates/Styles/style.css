@@ -60,18 +60,7 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
        --color-litht-section: #e7e4e4;
        
 }
-.container{
-    width: 100%;
-    max-width: 1125px;
-    margin: 0 auto;
-    padding: 30px;
-}
-.linha{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
+
 .coluna{
     flex-basis: 49%;
 }
@@ -106,12 +95,12 @@ header .coluna-esquerda{
     flex-basis: 30%;
 }
 header .coluna-direita{
-    flex-basis: 70%;
+    flex-basis: 60%;
+    text-align: center;
 }
 header .coluna figure{}
 header .coluna img{
-    max-width: 250px;
-    border-radius: 100%;
+    max-width: 100%;
 }
 header .coluna h1{
     font-size: 1.5rem;
@@ -137,7 +126,9 @@ header .coluna ul li a{
 footer{
     background-color: var(--color-footer);
 }
-footer .container{}
+footer .container{
+    padding: 20px;
+}
 footer nav{}
 footer nav ul{}
 footer nav ul li{}
@@ -150,15 +141,15 @@ footer nav .info-contato li{
 }
 footer nav .info-contato li a{}
 footer nav .redes-sociais{
-    display: flex;
-    justify-content: center;
     border-top: 1px solid rgb(255 255 255 / 20%);
     margin: 20px 0 50px;
     padding: 50px 0 0;
+    text-align: center;
 }
 footer nav .redes-sociais li{
-    margin: 0 14px;
+    margin: 15px 28px;
     text-align: center;
+    display: inline-block;
 }
 footer nav .redes-sociais li a{}
 footer nav .redes-sociais li a img{
@@ -172,15 +163,16 @@ footer nav .redes-sociais li a img p{}
 main{}
 main .container{}
 main .linha{}
-main .coluna{}
+main .coluna{
+    padding: 20px;
+}
 main .coluna-esquerda{}
 main .coluna-direita{}
 main .coluna section{
-    border: 1px solid #d4e9ff;
+    border-bottom: 1px solid #d4e9ff;
     margin: 0 0 20px;
-    padding: 20px;
     min-height: 187px;
-    background-color: var(--color-litht-section);
+    color:var(--corTextoSecudaria);
 }
 main .coluna section h2{
     font-size: 1.3rem;
@@ -189,7 +181,7 @@ main .coluna section h2{
 main .coluna section p{
     font-size: 0.9rem;
     line-height: 1.5;
-    background-color: var(--color-litht-section);
+    color: var(--corTextPrimaria);
 }
 main .coluna section ul{}
 main .coluna section ul li{
@@ -214,3 +206,52 @@ main .coluna section ul li p{}
 /*
 * /----------------------@medias----------------------/
 */
+/* @MEDIA */
+@media only screen and (min-width: 768px){
+    .linha{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    footer nav .redes-sociais {
+        display: flex;
+        justify-content: center;
+    }
+    header{
+        padding: 30px 0 0;
+    }
+    header .coluna img{
+        max-width: 250px;
+        border-radius: 100%;
+    }
+    .container{
+        width: 100%;
+        max-width: 1125px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    header .coluna-direita{
+        text-align: left;
+    }
+    main .coluna section{
+        border: 1px solid #d4e9ff;
+        padding: 20px;
+    }
+    main .coluna{
+        padding: 0;
+    }
+    footer nav .redes-sociais li{
+        margin: 0  14px;
+        text-align: center;
+        display: initial;
+    }
+    
+}
+
+@media only screen and (min-width: 991px){
+
+    header .coluna-direita{
+        flex-basis: 70%;
+    }
+}
