@@ -49,13 +49,15 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
        --color-shell-greem:#01cb50;
        --color-title-shell: #4d4879;
        --color-uper-dark-content: #201e30;
-       --color-light: #c7c3c3;
+       --color-light: #e0dddd;
+       --color-light-header: #e7e4e4;
        --color-h1: #4b4949;
        --color-h1-2: #4B94F2;
        --color-a-tungstenio: #0D0D0D;
        --color-background-header: #4B94F2;
        --color-background-2-header: #1B4C8C;
        --color-footer: #1B4C8C;
+       --color-litht-section: #e7e4e4;
        
 }
 .container{
@@ -94,7 +96,7 @@ header{
     padding-top: 30px;
 }
 header .container{
-    background-color: var(--color-light);
+    background-color: var(--color-light-header);
 }
 header .linha{
     align-items: center;
@@ -173,13 +175,35 @@ main .linha{}
 main .coluna{}
 main .coluna-esquerda{}
 main .coluna-direita{}
-main .coluna section{}
-main .coluna section h2{}
-main .coluna section p{}
+main .coluna section{
+    border: 1px solid #d4e9ff;
+    margin: 0 0 20px;
+    padding: 20px;
+    min-height: 187px;
+    background-color: var(--color-litht-section);
+}
+main .coluna section h2{
+    font-size: 1.3rem;
+    margin: 0 0 15px;
+}
+main .coluna section p{
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background-color: var(--color-litht-section);
+}
 main .coluna section ul{}
-main .coluna section ul li{}
-main .coluna section ul li h3{}
-main .coluna section ul li strong{}
+main .coluna section ul li{
+    margin: 0 0 12px;
+}
+main .coluna section ul li h3{
+    font-size: 1.1rem;
+}
+main .coluna section ul li strong{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 5px 0 10px;
+    display: inline-block;
+}
 main .coluna section ul li p{}
 
 /*
