@@ -54,10 +54,20 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
        --color-h1: #4b4949;
        --color-h1-2: #4B94F2;
        --color-a-tungstenio: #0D0D0D;
+       --color-grafite: #0B0C0D;
+       --color-tungstenio: #0D0D0D;
        --color-background-header: #4B94F2;
        --color-background-2-header: #1B4C8C;
        --color-footer: #1B4C8C;
        --color-litht-section: #e7e4e4;
+
+       --corBackgroundPrimaria: #45dbfc;
+       --corBackgroundSecundaria: #1B4C8C;
+
+       --corBackgroundDark:#0e0e0e;
+
+       --corTextPrimaria:#474747;
+       --corTextoSecudaria: var(--color-uper-dark-content);
        
 }
 
@@ -124,22 +134,19 @@ header .coluna ul li a{
 * /----------------------Footer----------------------/
 */
 footer{
-    background-color: var(--color-footer);
+    background-color:var(--corBackgroundSecundaria);
 }
 footer .container{
     padding: 20px;
 }
-footer nav{}
-footer nav ul{}
-footer nav ul li{}
 footer nav ul li a{
-    color: var(--color-light);
+    color: white;
 }
-footer nav .info-contato{}
+
 footer nav .info-contato li{
     margin: 0 0 15px;
 }
-footer nav .info-contato li a{}
+
 footer nav .redes-sociais{
     border-top: 1px solid rgb(255 255 255 / 20%);
     margin: 20px 0 50px;
@@ -151,23 +158,17 @@ footer nav .redes-sociais li{
     text-align: center;
     display: inline-block;
 }
-footer nav .redes-sociais li a{}
+
 footer nav .redes-sociais li a img{
-    width: 40px;
+    width: 23px;
 }
-footer nav .redes-sociais li a img p{}
 
 /*
 * /----------------------Main----------------------/
 */
-main{}
-main .container{}
-main .linha{}
 main .coluna{
     padding: 20px;
 }
-main .coluna-esquerda{}
-main .coluna-direita{}
 main .coluna section{
     border-bottom: 1px solid #d4e9ff;
     margin: 0 0 20px;
@@ -183,7 +184,6 @@ main .coluna section p{
     line-height: 1.5;
     color: var(--corTextPrimaria);
 }
-main .coluna section ul{}
 main .coluna section ul li{
     margin: 0 0 12px;
 }
@@ -201,6 +201,113 @@ main .coluna section ul li p{}
 /*
 * /----------------------Extras----------------------/
 */
+/* EXTRAS */
+.ativar-dark{
+    width: 50px;
+    height: 50px;
+    display: none;
+    visibility: hidden;
+}
+label{
+    display: flex;
+    justify-content: flex-end;
+}
+/* 
+* -------- Botão Ativar/Desativar----------/
+*/
+
+.ativar-dark + label {
+  padding: 2px;
+  width: 120px;
+  height: 60px;
+  background-color: #dddddd;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+.ativar-dark + label:before,
+.ativar-dark + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+.ativar-dark + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  border-radius: 60px;
+  transition: background 0.4s;
+}
+.ativar-dark + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 56px;
+  background-color: #dddddd;
+  border-radius: 52px;
+  transition: margin 0.4s, background 0.4s;
+}
+.ativar-dark:checked + label {
+  background-color: #8ce196;
+}
+.ativar-dark:checked + label:after {
+  margin-left: 60px;
+  background-color: #8ce196;
+}
+
+/* -----########------ */
+
+
+.ativar-dark:checked ~ .dark-mode{
+    --corBackgroundPrimaria: var(--color-a-tungstenio);
+    --corBackgroundSecundaria: #000;
+
+    --corTextPrimaria: var(--color-vsc-greem);
+    --corTextoSecudaria:var(--color-vsc-yellow);
+}
+.ativar-dark:checked ~ .dark-mode header{
+    background-color: var(--color-grafite);
+}
+.ativar-dark:checked ~ .dark-mode header h1{
+    color: var(--color-vsc-greem);
+}
+.ativar-dark:checked ~ .dark-mode header p{
+    color: var(--color-vsc-yellow);
+}
+.ativar-dark:checked ~ .dark-mode .contatoEmail{
+    color: var(--color-vsc-blue);
+}
+.ativar-dark:checked ~ .dark-mode .numeroTelefone{
+    color: var(--color-vsc-pink);
+}
+.ativar-dark:checked ~ .dark-mode .localidade{
+    color: var(--color-title-shell);
+}
+.ativar-dark:checked ~ .dark-mode header .container{
+    background-color: var(--color-vsc-dark-purple);
+}
+.ativar-dark:checked ~ .dark-mode  .container{
+    /* background-color:var(--corBackgroundDark) ; */
+}
+.ativar-dark:checked ~ .dark-mode main{
+    background-color: var(--color-grafite); /*------main background---*/
+}
+.ativar-dark:checked ~ .dark-mode main .container{
+    background-color: var(--color-vsc-dark-purple);
+}
+.ativar-dark:checked ~ .dark-mode footer{
+    background-color: var(--color-grafite);
+}
+.ativar-dark:checked ~ .dark-mode footer .container{
+    background-color: var(--color-vsc-dark-purple);
+}
+.ativar-dark:checked ~ .dark-mode footer .container a{
+    color: var(--color-vsc-yellow);
+}
+.ativar-dark:checked ~ .dark-mode footer .container p{
+    color: whitesmoke;
+}
 
 
 /*
