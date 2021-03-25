@@ -1,5 +1,5 @@
 /*
-Theme Name: Start sua carreira
+Theme Name: Evento Start sua carreira
 Theme URI: http://www.startsuacarreira.com.br
 Author: Kenzie Academy BR
 Author URI: https://kenzie.com.br;
@@ -22,7 +22,9 @@ font-family: 'Open Sans', sans-serif;
 
 */
 
-/* ESTILOS GERAIS */
+/*
+* Regra de reset dos elementos utilizados na estrutura HTML5
+*/
 html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
     margin: 0;
     padding: 0;
@@ -30,3 +32,78 @@ html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
     list-style: none;
     text-decoration: none;
 }
+
+.container{}
+.linha{}
+.coluna{}
+.hidden{}
+
+
+/*
+* /----------------------Body----------------------/
+*/
+body{}
+
+
+/*
+* Header
+*/
+header{}
+header .container{}
+header .linha{}
+header .coluna{}
+header .coluna-esquerda{}
+header .coluna-direita{}
+header .coluna figure{}
+header .coluna img{}
+header .coluna h1{}
+header .coluna p{}
+header .coluna ul{}
+header .coluna ul li{}
+header .coluna ul li a{}
+
+
+/*
+* /----------------------Main----------------------/
+*/
+main{}
+main .container{}
+main .linha{}
+main .coluna{}
+main .coluna-esquerda{}
+main .coluna-direita{}
+main .coluna section{}
+main .coluna section h2{}
+main .coluna section p{}
+main .coluna section ul{}
+main .coluna section ul li{}
+main .coluna section ul li h3{}
+main .coluna section ul li strong{}
+main .coluna section ul li p{}
+
+/*
+* /----------------------Footer----------------------/
+*/
+footer{}
+footer .container{}
+footer nav{}
+footer nav ul{}
+footer nav ul li{}
+footer nav ul li a{}
+footer nav .info-contato{}
+footer nav .info-contato li{}
+footer nav .info-contato li a{}
+footer nav .redes-sociais{}
+footer nav .redes-sociais li{}
+footer nav .redes-sociais li a{}
+footer nav .redes-sociais li a img{}
+footer nav .redes-sociais li a img p{}
+
+/*
+* /----------------------Extras----------------------/
+*/
+
+
+/*
+* /----------------------@medias----------------------/
+*/
