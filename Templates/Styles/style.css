@@ -123,7 +123,8 @@ header .coluna ul{
     margin: 16px 0 0;
 }
 header .coluna ul li{
-    margin: 0 0 12px;
+    margin: 0 0 0px;
+    /* margin: 0 0 12px; */
 }
 header .coluna ul li a{
     font-size: 1rem;
@@ -208,61 +209,41 @@ main .coluna section ul li p{}
     display: none;
     visibility: hidden;
 }
+header .container{
+    position: relative;
+}
 label{
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 52px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: var(--corBackgroundSecundaria);
 }
-/* 
-* -------- Botão Ativar/Desativar----------/
-*/
-
-.ativar-dark + label {
-  padding: 2px;
-  width: 120px;
-  height: 60px;
-  background-color: #dddddd;
-  border-radius: 60px;
-  transition: background 0.4s;
+label span{
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 100%;
+    transition: all ease .3s;
+    background-color: #d4e9ff;
 }
-.ativar-dark + label:before,
-.ativar-dark + label:after {
-  display: block;
-  position: absolute;
-  content: "";
+.ativar-dark:checked ~ .dark-mode label{
+    background-color: var(--color-vsc-greem);
 }
-.ativar-dark + label:before {
-  top: 2px;
-  left: 2px;
-  bottom: 2px;
-  right: 2px;
-  background-color: #fff;
-  border-radius: 60px;
-  transition: background 0.4s;
+.ativar-dark:checked ~ .dark-mode label span{
+    transform: translateX(21px);
+    transition: all ease .3s;
+    background-color: var(--corBackgroundSecundaria);
 }
-.ativar-dark + label:after {
-  top: 4px;
-  left: 4px;
-  bottom: 4px;
-  width: 56px;
-  background-color: #dddddd;
-  border-radius: 52px;
-  transition: margin 0.4s, background 0.4s;
-}
-.ativar-dark:checked + label {
-  background-color: #8ce196;
-}
-.ativar-dark:checked + label:after {
-  margin-left: 60px;
-  background-color: #8ce196;
-}
-
-/* -----########------ */
-
 
 .ativar-dark:checked ~ .dark-mode{
     --corBackgroundPrimaria: var(--color-a-tungstenio);
     --corBackgroundSecundaria: #000;
-
     --corTextPrimaria: var(--color-vsc-greem);
     --corTextoSecudaria:var(--color-vsc-yellow);
 }
