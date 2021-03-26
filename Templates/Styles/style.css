@@ -123,7 +123,8 @@ header .coluna ul{
     margin: 16px 0 0;
 }
 header .coluna ul li{
-    margin: 0 0 12px;
+    margin: 0 0 0px;
+    /* margin: 0 0 12px; */
 }
 header .coluna ul li a{
     font-size: 1rem;
@@ -208,57 +209,41 @@ main .coluna section ul li p{}
     display: none;
     visibility: hidden;
 }
-label{
-    display: flex;
-    justify-content: flex-end;
-}
-/* 
-* -------- Botão Ativar/Desativar----------/
-*/
-.toggle {
-    --width: 40px;
-    --height: calc(var(--width) / 2);
-    --border-radius: calc(var(--height) / 2);
-
-    display: inline-block;
-    cursor: pointer;
-}
-.toggle__input {
-    display: none;
-}
-.toggle__fill {
+header .container{
     position: relative;
-    width: var(--width);
-    height: var(--height);
-    border-radius: var(--border-radius);
-    background: #dddddd;
-    transition: background 0.2s;
 }
-.toggle__fill::after {
-    content: "";
+label{
     position: absolute;
-    top: 0;
-    left: 0;
-    height: var(--height);
-    width: var(--height);
-    background: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    border-radius: var(--border-radius);
-    transition: transform 0.2s;
+    top: 30px;
+    right: 30px;
+    width: 52px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: var(--corBackgroundSecundaria);
 }
-.toggle__input:checked ~ .toggle__fill {
-    background: #009578;
+label span{
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 100%;
+    transition: all ease .3s;
+    background-color: #d4e9ff;
 }
-.toggle__input:checked ~ .toggle__fill::after {
-    transform: translateX(var(--height));
+.ativar-dark:checked ~ .dark-mode label{
+    background-color: var(--color-vsc-greem);
 }
-/* --------------------------------------------------- */
-
+.ativar-dark:checked ~ .dark-mode label span{
+    transform: translateX(21px);
+    transition: all ease .3s;
+    background-color: var(--corBackgroundSecundaria);
+}
 
 .ativar-dark:checked ~ .dark-mode{
     --corBackgroundPrimaria: var(--color-a-tungstenio);
     --corBackgroundSecundaria: #000;
-
     --corTextPrimaria: var(--color-vsc-greem);
     --corTextoSecudaria:var(--color-vsc-yellow);
 }
