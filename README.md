@@ -17,7 +17,7 @@ Neste projeto, construímos um Portifólio, responsivo e elegante.
 
 ![tituloGitHUb](https://user-images.githubusercontent.com/990877/112645909-bf56c100-8e25-11eb-8fae-a30bacbd5730.png)
 
-![Pc Phone](https://user-images.githubusercontent.com/990877/112644943-baddd880-8e24-11eb-9d9f-c3fd4562b340.png)
+![Portifólio2](https://user-images.githubusercontent.com/990877/112646678-80753b00-8e26-11eb-8810-82faed4bba33.png)
 
 ##2. Protótipo do projeto.
 
