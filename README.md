@@ -15,6 +15,12 @@ Foram usados: [HTML 5](https://developer.mozilla.org/en-US/docs/Web/HTML/HTML5),
 
 Neste projeto, construímos um Portifólio, responsivo e elegante.
 
+![tituloGitHUb](https://user-images.githubusercontent.com/990877/112645909-bf56c100-8e25-11eb-8fae-a30bacbd5730.png)
+
+![Pc Phone](https://user-images.githubusercontent.com/990877/112644943-baddd880-8e24-11eb-9d9f-c3fd4562b340.png)
+
+##2. Protótipo do projeto.
+
 ![Screenshot from 2021-03-25 15-02-53](https://user-images.githubusercontent.com/990877/112521431-41d67680-8d7b-11eb-9715-586f7cc063b9.png)
 
 [![Linkedin: maic](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/maic/)](https://www.linkedin.com/in/maic-miller-330721208/)
